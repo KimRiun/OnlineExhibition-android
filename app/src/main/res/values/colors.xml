@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="blue">#0029FF</color>
+    <color name="purple">#7B2FDC</color>
     <color name="white">#FFFFFFFF</color>
     <color name="black">#FF000000</color>
     <color name="button_gray">#FAFAFA</color>
     <color name="line_gray">#E0E0E0</color>
     <color name="content_gray">#949494</color>
-    <color name="green">#5AFF99</color>
 </resources>
