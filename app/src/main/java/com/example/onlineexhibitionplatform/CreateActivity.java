@@ -101,7 +101,17 @@ public class CreateActivity extends AppCompatActivity {
                 if(title_boolean && author_boolean && content_boolean){
                     /* 저장하기 Logic*/
                     Toast.makeText(getApplicationContext(), "저장하였습니다.", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(CreateActivity.this, ReadOneActivity.class);
 
+                    intent.putExtra("contact_title", binding.titleEditText.getText().toString());
+                    intent.putExtra("contact_author", binding.authorEditText.getText().toString());
+                    intent.putExtra("contact_content", binding.contentEditText.getText().toString());
+
+                    startActivity(intent); // ReadOneActivity 시작
+
+                    // CreateAcitivity 종료
+                    // ReadOneActivity에서 백스탭하면 MainActivity로 이동
+                    finish();
                 }
                 else{
                     if (!title_boolean) {
