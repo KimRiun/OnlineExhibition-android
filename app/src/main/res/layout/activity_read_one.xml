@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReadOneActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--툴바 위젯-->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/button_gray"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/textViewTitle"
+                tools:text="제목"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/textViewAuthor"
+                tools:text="글쓴이"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="56dp"
+                android:id="@+id/textViewContent"
+                tools:text="내용"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
