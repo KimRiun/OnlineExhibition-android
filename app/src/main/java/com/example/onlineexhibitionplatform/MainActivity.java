@@ -62,4 +62,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+    public void click_btn(View view) {  //버튼 클릭
+
+        binding.rvPoem.ti.setText(movieName1);
+        tvMovieRank1.setText(rank1);
+
+        tvMovieName2.setText(movieName2);
+        tvMovieRank2.setText(rank2);
+    }
+
 }
